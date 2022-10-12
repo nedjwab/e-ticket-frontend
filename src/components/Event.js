@@ -8,7 +8,6 @@ export default function Event() {
   useEffect(() => {
     dispatch(fetchEvents());
   }, []);
-  console.log(events);
   return (
     <ul className="list-group p-3">
       {events.map((game) => (

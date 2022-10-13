@@ -34,7 +34,7 @@ const Navbar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar__logo">
-        Animate
+        E-ticket
       </div>
       <div className="sidebar__menu">
 

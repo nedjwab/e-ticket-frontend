@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 .sidebar {
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
-    width: 320px;
+    width: 260px;
     background-color: #fff;
+    border-right: 1px solid grey;
 }
 .sidebar__logo {
     display: grid;
@@ -12,11 +15,12 @@
     height: 120px;
     font-size: 1.5rem;
     font-weight: 700;
-    font-family: 'Mochiy Pop P one', sans-serif;
+    font-family: 'Dancing Script', cursive;
 }
 .sidebar__menu {
     position: relative;
 }
+
 .sidebar__menu__item {
     display: flex;
     align-items: center;
@@ -24,18 +28,14 @@
     padding: 1rem 3rem;
     font-size: 1.25rem;
     font-weight: 500;
-    color: #555;
-    transition: color 0.3s ease-in-out;
+    color: black;
 }
-.sidebar__menu__item.active {
-    color: #fff;
+
+.pageLink {
+    text-decoration: none;
 }
-.sidebar__menu__item__icon {
-    margin-right: 1rem;
-}
-.sidebar__menu__item__icon i {
-    font-size: 1.75rem;
-}
+
+
 .sidebar__menu__indicator {
     position: absolute;
     top: 0;

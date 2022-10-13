@@ -10,7 +10,7 @@ export default function Event() {
   }, []);
   return (
     <section className='events-container'>
-      <h1>All events </h1>
+      <h1>Next events </h1>
       <ul className="events-ul">
         {events.map((event) => (
           <li key={event.id} className="event-li">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './sidebar.css';
 
 const Navbar = () => {
   const links = [
@@ -29,23 +30,29 @@ const Navbar = () => {
       text: 'Reserve',
     },
   ];
+
   return (
-    <header>
-      <div className="logo-section">
-        <span id="logo-text">E-ticket</span>
+    <div className="sidebar">
+      <div className="sidebar__logo">
+        Animate
       </div>
-      <nav className="navBar">
-        <ul className="pageLinksSection">
-          {links.map((link) => (
-            <li key={link.id}>
-              <NavLink exact="true" to={link.path} className="pageLink">
-                {link.text}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </header>
+      <div className="sidebar__menu">
+
+        {
+            links.map((link) => (
+              <div key={link.id}>
+                <NavLink exact="true" to={link.path} className="pageLink">
+                  <div className="sidebar__menu__item">
+                    <div className="sidebar__menu__item__text">
+                      {link.text}
+                    </div>
+                  </div>
+                </NavLink>
+              </div>
+            ))
+        }
+      </div>
+    </div>
   );
 };
 

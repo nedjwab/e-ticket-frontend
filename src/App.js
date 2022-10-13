@@ -1,5 +1,5 @@
 import React from 'react';
-import Event from './components/Event';
+import Event from './components/events/Event';
 import './App.css';
 
 function App() {

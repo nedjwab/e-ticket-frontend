@@ -1,0 +1,12 @@
+img {
+  width: 300px;
+  height: 400px;
+}
+.events-ul {
+ display: grid;
+}
+.events-ul > li {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}

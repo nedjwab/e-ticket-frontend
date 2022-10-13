@@ -1,7 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-
 const Navbar = () => {
   const links = [
     {
@@ -12,7 +11,7 @@ const Navbar = () => {
     {
       id: 2,
       path: '/Myreservations',
-      text: 'Missions',
+      text: 'My Reservations',
     },
     {
       id: 3,
@@ -26,9 +25,9 @@ const Navbar = () => {
     },
     {
       id: 5,
-      path: '/Add reservation',
+      path: '/Addreservation',
       text: 'Reserve',
-    }
+    },
   ];
   return (
     <header>

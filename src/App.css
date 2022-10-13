@@ -1,1 +1,8 @@
 @import "https://unpkg.com/open-props";
+:root {
+  --main-color: #efefef;
+}
+
+body {
+  background: var(--main-color);
+}

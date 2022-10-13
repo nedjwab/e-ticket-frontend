@@ -1,4 +1,3 @@
-@import "https://unpkg.com/open-props";
 
 img {
   width: 300px;
@@ -6,6 +5,11 @@ img {
 }
 .events-ul {
  display: grid;
+ gap: var(--size-3);
+ grid-auto-flow: column;
+ grid-auto-columns: 21%;
+ overflow-x: scroll;
+ overscroll-behavior-inline: contain;
 }
 .events-ul > li {
   display: flex;

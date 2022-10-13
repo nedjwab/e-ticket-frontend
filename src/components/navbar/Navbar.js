@@ -8,26 +8,31 @@ const Navbar = () => {
       id: 1,
       path: '/',
       text: 'Events',
+      icon: 'i',
     },
     {
       id: 2,
       path: '/Myreservations',
       text: 'My Reservations',
+      icon: 'i',
     },
     {
       id: 3,
       path: '/Addevent',
       text: 'Add event',
+      icon: 'i',
     },
     {
       id: 4,
       path: '/Deleteevent',
       text: 'Delete Event',
+      icon: 'i',
     },
     {
       id: 5,
       path: '/Addreservation',
       text: 'Reserve',
+      icon: 'i',
     },
   ];
 
@@ -43,6 +48,9 @@ const Navbar = () => {
               <div key={link.id}>
                 <NavLink exact="true" to={link.path} className="pageLink">
                   <div className="sidebar__menu__item">
+                    <div className="sidebar__menu__item__icon">
+                      {link.icon}
+                    </div>
                     <div className="sidebar__menu__item__text">
                       {link.text}
                     </div>

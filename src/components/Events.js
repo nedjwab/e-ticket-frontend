@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchEvents, selectEvents } from '../features/events/eventSlice';
+import Event from './Event';
 import styles from './styles/events.module.css';
 
 export default function Events() {
@@ -9,12 +10,17 @@ export default function Events() {
   useEffect(() => {
     dispatch(fetchEvents());
   }, []);
+  const renderEventPage = (event) => {
+    console.log('event shown');
+    <Event event = {event} />
+  }
+
   return (
     <section className={styles}>
       <h1>Next events </h1>
       <ul className={styles.eventsUl}>
         {events.map((event) => (
-          <li key={event.id} className={styles.eventsLi}>
+          <li key={event.id} className={styles.eventsItem} onClick={renderEventPage(event)}>
             <img src={event.photo} alt="event cover" className={styles.eventImg} />
             <h2>{event.name}</h2>
           </li>

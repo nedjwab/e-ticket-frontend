@@ -1,3 +1,4 @@
+/*eslint-disable */
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchEvents, selectEvents } from '../features/events/eventSlice';
@@ -11,9 +12,8 @@ export default function Events() {
     dispatch(fetchEvents());
   }, []);
   const renderEventPage = (event) => {
-    console.log('event shown');
-    <Event event = {event} />
-  }
+    <Event event={event} />;
+  };
 
   return (
     <section className={styles}>

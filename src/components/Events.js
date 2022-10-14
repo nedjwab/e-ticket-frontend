@@ -15,7 +15,7 @@ export default function Events() {
       <ul className={styles.eventsUl}>
         {events.map((event) => (
           <li key={event.id} className={styles.eventsLi}>
-            <img src={event.photo} alt='event cover' className={styles.eventImg}/>
+            <img src={event.photo} alt="event cover" className={styles.eventImg} />
             <h2>{event.name}</h2>
           </li>
         ))}

@@ -8,6 +8,6 @@ function App() {
       <Events />
     </div>
   );
-};
+}
 
 export default App;

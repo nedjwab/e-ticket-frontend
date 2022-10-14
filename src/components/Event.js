@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchEvents, selectEvents } from '../features/events/eventSlice';
-import './styles/event.css'
+import styles from './styles/event.module.css';
+
 export default function Event() {
   const dispatch = useDispatch();
   const events = useSelector(selectEvents);
@@ -9,13 +10,13 @@ export default function Event() {
     dispatch(fetchEvents());
   }, []);
   return (
-    <section className='events-container'>
+    <section className={styles}>
       <h1>Next events </h1>
-      <ul className="events-ul">
+      <ul className={styles.eventsUl}>
         {events.map((event) => (
-          <li key={event.id} className="event-li">
-            <img src={event.photo} alt='event cover' className='event-img' />
-            <h2 className="text-info">{event.name}</h2>
+          <li key={event.id} className={styles.eventsLi}>
+            <img src={event.photo} alt='event cover' className={styles.eventImg}/>
+            <h2>{event.name}</h2>
           </li>
         ))}
       </ul>

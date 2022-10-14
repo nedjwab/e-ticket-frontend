@@ -1,13 +1,13 @@
 import React from 'react';
-import Event from './components/Events';
+import Events from './components/Events';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Event />
+      <Events />
     </div>
   );
-}
+};
 
 export default App;

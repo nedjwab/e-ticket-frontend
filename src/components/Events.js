@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchEvents, selectEvents } from '../features/events/eventSlice';
 import styles from './styles/events.module.css';
 
-export default function Event() {
+export default function Events() {
   const dispatch = useDispatch();
   const events = useSelector(selectEvents);
   useEffect(() => {

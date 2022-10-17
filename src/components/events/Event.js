@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchEvents, selectEvents } from '../features/events/eventSlice';
+import { fetchEvents, selectEvents } from '../../features/events/eventSlice';
 
 export default function Event() {
   const dispatch = useDispatch();

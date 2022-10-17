@@ -1,7 +1,9 @@
 @import "https://unpkg.com/open-props";
+
 :root {
   --main-color: #efefef;
 }
+
 * {
   padding: 0;
   margin: 0;
@@ -9,6 +11,7 @@
   list-style: none;
   text-decoration: none;
 }
+
 body {
   background: var(--main-color);
 }

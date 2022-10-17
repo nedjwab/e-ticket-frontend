@@ -3,14 +3,16 @@
   height: 300px;
   border-radius: 40%;
 }
+
 .eventsUl {
- display: grid;
- gap: var(--size-3);
- grid-auto-flow: column;
- grid-auto-columns: 21%;
- overflow-x: scroll;
- overscroll-behavior-inline: contain;
+  display: grid;
+  gap: var(--size-3);
+  grid-auto-flow: column;
+  grid-auto-columns: 21%;
+  overflow-x: scroll;
+  overscroll-behavior-inline: contain;
 }
+
 .eventsItem {
   display: flex;
   flex-direction: column;

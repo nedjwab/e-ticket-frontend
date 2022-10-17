@@ -1,15 +1,16 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-export const fetchReservations = (userId) => createAsyncThunk('reservations/fetchReservation',
+const apiUrl = 'http://localhost:3000/api/v1/users/1/reservations';
+
+export const fetchReservations = createAsyncThunk('reservation/fetchreservation',
   async () => {
-    const apiUrl = `http://localhost:3000/api/v1/users/${userId}/reservations`;
     const res = await fetch(apiUrl);
     const data = res.json();
     return data;
   });
 
 const options = {
-  name: 'reservations',
+  name: 'reservation',
   initialState: [],
   reducers: {},
   extraReducers: {
@@ -19,4 +20,4 @@ const options = {
 
 const reservationSlice = createSlice(options);
 export default reservationSlice.reducer;
-export const selectReservations = (state) => state.reservations;
+export const selectReservations = (state) => state.reservation;

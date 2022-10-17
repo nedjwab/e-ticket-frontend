@@ -1,39 +1,348 @@
 .App {
-  text-align: center;
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-home {
+  display: flex;
+  gap: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
-  min-height: 100vh;
+.doctor-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.home {
+  width: 100%;
 }
 
-@keyframes App-logo-float {
+.grd {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-column: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-column: repeat(4, 1fr);
+  width: 100%;
+  height: 70%;
+  margin: auto;
+}
+
+.desk {
+  display: flex;
+}
+
+.sidebar {
+  display: flex;
+  width: 20%;
+  border: 1px solid #000;
+  height: 100vh;
+  transition: all 1s ease-in-out;
+}
+
+.home-top-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.humbergur {
+  display: none;
+}
+
+.splash-sec {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(./assests/images/BusinessEvent.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: change 15s infinite ease-in-out;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: #8789c7;
+  opacity: 0.7;
+  position: absolute;
+}
+
+.logo-div1 {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background: #eee;
+  margin: auto;
+}
+
+.logo1 {
+  width: 90px;
+  height: 90px;
+  margin: 25px 0 9px 30px;
+}
+
+.text {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.login-btn {
+  width: 200px;
+}
+
+.btn-login {
+  background: #91bf13;
+  height: auto;
+  padding: 8px;
+  border-radius: 20px;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+}
+
+.top {
+  margin-top: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 99;
+}
+
+.bottom {
+  z-index: 99;
+  margin-bottom: 20px;
+}
+
+/* Registeration form */
+.container-reg {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.register-title {
+  color: #000;
+  font-size: 25px;
+  margin-top: 20%;
+}
+
+.reg-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-inputs,
+.username {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 30%;
+}
+
+.reg-form input {
+  width: 80%;
+  padding: 8px;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.btn-reg {
+  width: 100px;
+  margin: auto;
+  background: #91bf13;
+  padding: 7px;
+  color: #fff;
+  border-radius: 23px;
+  border: 0;
+}
+
+@keyframes change {
   0% {
-    transform: translateY(0);
+    background-image: url(./assests/images/BusinessEvent.jpg);
   }
-  50% {
-    transform: translateY(10px);
+
+  20% {
+    background-image: url(./assests/images/event1.jpg);
   }
+
+  40% {
+    background-image: url(./assests/images/upcoming.jpg);
+  }
+
+  60% {
+    background-image: url(./assests/images/upcoming.jpg);
+  }
+
+  80% {
+    background-image: url(./assests/images/BusinessEvent.jpg);
+  }
+
   100% {
-    transform: translateY(0px);
+    background-image: url(./assests/images/event1.jpg)
+  }
+}
+
+@media (max-width: 600px) {
+  .grd {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    height: 70%;
+    margin: auto;
+  }
+
+  .reg-form input {
+    width: auto;
+    padding: 8px;
+    border-radius: 20px;
+    margin: auto;
+  }
+
+  .home-top-content h1 {
+    font-size: 25px;
+    width: 60%;
+    text-align: center;
+  }
+
+  .humbergur {
+    display: flex;
+    border: 0;
+    position: fixed;
+    z-index: 99;
+    background: transparent;
+  }
+
+  #fixed {
+    position: fixed;
+    transform: translateX(0);
+    transition: all 6s ease-in-out;
+    opacity: 0.9;
+  }
+
+  .open {
+    font-size: 25px;
+    color: #000;
+    background: #fff;
+  }
+
+  .active-nav {
+    overflow: hidden;
+  }
+
+  .close {
+    display: block;
+    border: 0;
+    background: #eee;
+    font-size: 25px;
+  }
+
+  .home {
+    width: 100%;
+    margin: auto;
+  }
+
+  .desk {
+    display: none;
+  }
+
+  .side {
+    display: none !important;
+  }
+
+  .App {
+    display: block;
+  }
+}
+
+@media (min-width: 601px)  and (max-width: 920px) {
+  .home-top-content h1 {
+    font-size: 25px;
+    width: 60%;
+  }
+
+  .grd {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    height: 70%;
+    margin: auto;
+  }
+
+  .side {
+    display: none !important;
+  }
+
+  .desk {
+    display: none;
+  }
+
+  .reg-form input {
+    width: auto;
+    padding: 8px;
+    border-radius: 20px;
+    margin: auto;
+  }
+
+  #fixed {
+    position: fixed;
+    overflow-y: hidden;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+  }
+
+  .active-nav {
+    overflow: hidden;
+  }
+
+  .humbergur {
+    display: flex;
+    border: 0;
+    position: fixed;
+    z-index: 99;
+    background: transparent;
+  }
+
+  .home {
+    width: 100%;
+    margin: auto;
+  }
+
+  .close {
+    display: block;
+    border: 0;
+    background: #eee;
+    font-size: 25px;
+  }
+
+  .App {
+    display: block;
   }
 }

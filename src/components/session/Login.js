@@ -30,7 +30,7 @@ const Login = () => {
 
   if (user.logged_in) {
     saveToLocalStorage(user);
-    return <Navigate replace to="/user/event" />;
+    return <Navigate replace to="/event" />;
   }
 
   return (

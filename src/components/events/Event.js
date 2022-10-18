@@ -13,8 +13,8 @@ export default function Event() {
 
   return (
     <div className="w-100">
-      <h1 className="text">Events</h1>
-      <h2 className="secondry-text ">Please select an Event</h2>
+      <h1 className="text">Our Events List</h1>
+      <h2 className="secondry-text ">Please select one</h2>
       <div className="card-container">
         {events.map((event) => (
           <div key={event.id} className="cards">

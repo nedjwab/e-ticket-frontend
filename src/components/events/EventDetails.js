@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { HiLocationMarker, HiOutlineArrowSmLeft } from 'react-icons/hi';
 
 export default function Event() {
   const { eventID } = useParams();
@@ -27,17 +28,27 @@ export default function Event() {
               {' '}
               {roomDetails.description}
             </p>
-            <p>{roomDetails.event_date}</p>
-            <p>
-              {roomDetails.ticket_price}
-              $
-            </p>
-            <p>{roomDetails.seats_available}</p>
-            <p>{roomDetails.location}</p>
-            <Link to="/Addreservation" className="link link-decoration">Reserve</Link>
+            <div className="info-container">
+              <p>Ticket Price :</p>
+              <p className="green-text">
+                {roomDetails.ticket_price}
+                $
+              </p>
+            </div>
+            <div className="info-container">
+              <p>Seats Available :</p>
+              <p className="green-text">{roomDetails.seats_available}</p>
+            </div>
+            <div className="location-container">
+              <div className="icon">
+                <HiLocationMarker />
+              </div>
+              <p>{roomDetails.location}</p>
+            </div>
+            <Link to="/Addreservation" className="link link-decoration detail-reserve">Reserve</Link>
           </div>
         </div>
-        <Link to="/" className="link link-decoration">Back</Link>
+        <Link to="/" className="link green-text back-button"><HiOutlineArrowSmLeft /></Link>
       </div>
     </div>
   );

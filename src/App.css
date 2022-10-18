@@ -82,4 +82,43 @@
 .card-text {
   color: #b2b2b2;
   margin-bottom: 50px;
+  font-size: 17px;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'Crimson Text', serif;
+}
+
+.location-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Crimson Text', serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.icon {
+  margin-top: 7px;
+  color: #97bf11;
+  margin-right: 10px;
+}
+
+.green-text {
+  color: #97bf11;
+}
+
+.detail-reserve {
+  margin-left: 87%;
+}
+
+.back-button {
+  margin-left: 20%;
+  font-size: 50px;
+  cursor: pointer;
 }

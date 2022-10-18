@@ -5,15 +5,14 @@ import { registeration } from '../../features/user/RegistrationLoginSlice';
 
 const Register = () => {
   const dispatch = useDispatch();
-  const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
   const [loading, setLoading] = useState(false);
   const user = useSelector((state) => state.user);
 
   const formSubmit = (e) => {
     e.preventDefault();
-    if (email && username) {
-      dispatch(registeration({ email, username }));
+    if (username) {
+      dispatch(registeration({ username }));
       setLoading(true);
     }
   };
@@ -28,17 +27,6 @@ const Register = () => {
     >
       <h2 className="register-title">Sign Up</h2>
       <form onSubmit={formSubmit} className="reg-form">
-        <div className="form-inputs">
-          <input
-            type="email"
-            className="form-input"
-            id="floatingInput"
-            placeholder="name@example.com"
-            value={email}
-            required
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
         <div className="username">
           <input
             type="text"

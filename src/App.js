@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Event from './components/events/Event';
 import Navbar from './components/navbar/Navbar';
 import Register from './components/session/Register';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import SplashScreen from './components/session/SplashScreen';
 import Login from './components/session/Login';
 import MyReservations from './components/reservation/Myreservations';

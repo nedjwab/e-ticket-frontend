@@ -1,49 +1,30 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+
+.text,.secondry-text {
+  margin-top: 20px;
   text-align: center;
+  margin-left: 10%;
+  font-family: 'Crimson Text', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.secondry-text {
+  color:#B2B2B2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.sidebar {
+  background-color: #97bf11;
+  opacity: 0.8;
+  color:white;
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.sidebar__menu__item__text {
+  color:white;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
-}
-
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(10px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
 
 .card-container {
   display: grid;
   grid-template-columns: 1fr ;
-
   width: 100%;
 }
 
@@ -52,32 +33,54 @@
   border-radius: 10px;
   padding: 30px;
   background-color: white;
-  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
   cursor :pointer;
-  width: 46%;
+  width: 41%;
   margin-left: 32%;
+  border:1px solid #EAEAEA;
+  margin-bottom: 20px;
 }
+
+.cards:hover {
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+}
+
 
 .link {
   color: black;
   text-decoration:none;
 }
 
+.card-title {
+  font-family: 'Crimson Text', serif;
+  font-size: 30px;
+}
+
 .img-container {
-  /* background-image: url("./blob.svg"); */
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .img-container img {
-  width: 50%;
+  width: 60%;
   height: 50%;
+  margin-bottom: 32px;
 }
 
 .link-decoration {
   padding:2%;
-  background-color:#97bf11;
   border-radius: 20px;
   margin-top:90px;
+  background-color:white;
+  border: 1px solid #97bf11;
+  color:black;
 }
 
+.link-decoration:hover{
+  background-color:#97bf11;
+  color:white;
+}
+
+.card-text {
+  color:#B2B2B2;
+  margin-bottom: 50px;
+}

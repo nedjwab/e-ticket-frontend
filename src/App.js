@@ -12,9 +12,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      {(sessionStorage.getItem('loginToken')) ? <Navbar /> : null }
       <Routes>
-        <Route path="/" element={<Event />} />
+        <Route path="/home" element={<Event />} />
         <Route path="/" element={<Login />} />
         <Route path="/Addreservation" element={<AddReservation />} />
         <Route path="/Myreservations" element={<MyReservations />} />

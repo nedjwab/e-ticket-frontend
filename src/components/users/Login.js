@@ -9,7 +9,7 @@ const Login = () => {
 
   const [user, setUser] = useState({
     username: '',
-    password: '',
+    password_digest: '',
   });
 
   const handleUserLogin = (e) => {
@@ -20,7 +20,7 @@ const Login = () => {
     };
     dispach(fetchCurrentUser(currentUser));
 
-    if (user.username && user.password) {
+    if (user.username && user.password_digest) {
       setTimeout(() => {
         navigate('/home');
         window.location.reload(false);
@@ -31,7 +31,7 @@ const Login = () => {
     }
     setUser({
       username: '',
-      password: '',
+      password_digest: '',
     });
   };
 
@@ -64,8 +64,8 @@ const Login = () => {
                   id="password-input"
                   className="form-control py-2  px-4 "
                   type="password"
-                  value={user.password}
-                  onChange={(e) => setUser({ ...user, password: e.target.value })}
+                  value={user.password_digest}
+                  onChange={(e) => setUser({ ...user, password_digest: e.target.value })}
                   placeholder="Password"
                 />
               </label>

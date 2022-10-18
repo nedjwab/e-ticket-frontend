@@ -39,3 +39,20 @@
     transform: translateY(0);
   }
 }
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 30px;
+  width: 80%;
+  margin: 4% 14%;
+}
+
+.cards {
+  margin-top: 3%;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+}

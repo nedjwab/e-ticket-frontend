@@ -19,9 +19,11 @@ function App() {
         <Route exact path="/" element={<SplashScreen />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/Event" element={<Event />} />
-        <Route path="/Addreservation" element={<AddReservation />} />
-        <Route path="/Myreservations" element={<MyReservations />} />
+        <Route element={<Navbar />}>
+          <Route path="/Event" element={<Event />} />
+          <Route path="/Addreservation" element={<AddReservation />} />
+          <Route path="/Myreservations" element={<MyReservations />} />
+        </Route>
       </Routes>
     </div>
   );

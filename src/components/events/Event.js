@@ -7,7 +7,7 @@ export default function Event() {
   const events = useSelector(selectEvents);
   useEffect(() => {
     dispatch(fetchEvents());
-  }, );
+  });
   return (
     <ul className="list-group p-3">
       {events.map((game) => (

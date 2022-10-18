@@ -2,22 +2,6 @@
   display: flex;
 }
 
-.main-home {
-  display: flex;
-  gap: 10px;
-}
-
-.doctor-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.home {
-  width: 100%;
-}
-
 .grd {
   display: -ms-grid;
   display: grid;
@@ -34,18 +18,13 @@
 }
 
 .sidebar {
-  display: flex;
   width: 20%;
   border: 1px solid #000;
   height: 100vh;
-  transition: all 1s ease-in-out;
-}
-
-.home-top-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  position: fixed;
+  left: 0;
+  display: block;
+  transition: all 1s ease-in-out left 0.3s;;
 }
 
 .logo-div {
@@ -53,10 +32,6 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
-
-.humbergur {
-  display: none;
 }
 
 .splash-sec {
@@ -96,12 +71,6 @@
   width: 90px;
   height: 90px;
   margin: 25px 0 9px 30px;
-}
-
-.text {
-  font-size: 30px;
-  font-weight: 600;
-  color: #fff;
 }
 
 .login-btn {
@@ -226,72 +195,12 @@
     margin: auto;
   }
 
-  .home-top-content h1 {
-    font-size: 25px;
-    width: 60%;
-    text-align: center;
-  }
-
-  .humbergur {
-    display: flex;
-    border: 0;
-    position: fixed;
-    z-index: 99;
-    background: transparent;
-  }
-
-  #fixed {
-    position: fixed;
-    transform: translateX(0);
-    transition: all 6s ease-in-out;
-    opacity: 0.9;
-  }
-
-  .open {
-    font-size: 25px;
-    color: #000;
-    background: #fff;
-  }
-
-  .active-nav {
+  .Navbar {
     overflow: hidden;
-  }
-
-  .close {
-    display: block;
-    border: 0;
-    background: #eee;
-    font-size: 25px;
-  }
-
-  .home {
-    width: 100%;
-    margin: auto;
-  }
-
-  .desk {
-    display: none;
-  }
-
-  .side {
-    display: none !important;
-  }
-
-  .App {
-    display: block;
   }
 }
 
 @media (min-width: 601px) and (max-width: 920px) {
-  .home-top-content h1 {
-    font-size: 25px;
-    width: 60%;
-  }
-
-  .h-full {
-    height: 100vh !important;
-  }
-
   .grd {
     display: -ms-grid;
     display: grid;
@@ -311,10 +220,6 @@
     display: none !important;
   }
 
-  .desk {
-    display: none;
-  }
-
   .reg-form input {
     width: auto;
     padding: 8px;
@@ -329,31 +234,7 @@
     transition: all 1s ease-in-out;
   }
 
-  .active-nav {
+  .Navbar {
     overflow: hidden;
-  }
-
-  .humbergur {
-    display: flex;
-    border: 0;
-    position: fixed;
-    z-index: 99;
-    background: transparent;
-  }
-
-  .home {
-    width: 100%;
-    margin: auto;
-  }
-
-  .close {
-    display: block;
-    border: 0;
-    background: #eee;
-    font-size: 25px;
-  }
-
-  .App {
-    display: block;
   }
 }

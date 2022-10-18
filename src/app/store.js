@@ -4,7 +4,6 @@ import register from '../features/user/RegistrationLoginSlice';
 
 import reservationReducer from '../features/reservations/reservationSlice';
 
-
 const store = configureStore({
   reducer: {
     event: eventReducer,

@@ -42,17 +42,42 @@
 
 .card-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  gap: 30px;
-  width: 80%;
-  margin: 4% 14%;
+  grid-template-columns: 1fr ;
+
+  width: 100%;
 }
 
 .cards {
   margin-top: 3%;
   border-radius: 10px;
-  padding: 10px;
+  padding: 30px;
   background-color: white;
   box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+  cursor :pointer;
+  width: 46%;
+  margin-left: 32%;
 }
+
+.link {
+  color: black;
+  text-decoration:none;
+}
+
+.img-container {
+  /* background-image: url("./blob.svg"); */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img-container img {
+  width: 50%;
+  height: 50%;
+}
+
+.link-decoration {
+  padding:2%;
+  background-color:#97bf11;
+  border-radius: 20px;
+  margin-top:90px;
+}
+

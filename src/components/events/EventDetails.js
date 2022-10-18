@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 
 export default function Event() {
-  // console.log(props.match.params.id);
   const { eventID } = useParams();
   const [roomDetails, setRoomDetails] = useState('');
   useEffect(() => {
@@ -14,7 +13,7 @@ export default function Event() {
       .then((response) => response.json())
       .then((data) => setRoomDetails(data));
   }, []);
-  console.log(eventID);
+
   return (
     <div className="w-100">
       <div className="card-container">

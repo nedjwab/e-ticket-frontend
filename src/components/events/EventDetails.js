@@ -1,39 +1,26 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 
-export default function Room({ match }) {
-  const [data, setData] = useState([]);
-
+export default function Room() {
+  // console.log(props.match.params.id);
+  const { eventID } = useParams();
+  const [roomDetails, setRoomDetails] = useState('');
   useEffect(() => {
-    const eventData = {
+    const roomData = {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' },
     };
-    fetch(`http://127.0.0.1:3001/api/v1/events/?id=${match.params.id}`, eventData)
+    fetch(`http://127.0.0.1:3001/api/v1/events/${eventID}`, roomData)
       .then((response) => response.json())
-      .then((data) => setData(data));
+      .then((data) => setRoomDetails(data));
   }, []);
-
+  console.log(eventID);
   return (
-    <div className="container my-5">
-      {data.map((item) => (
-        <div className="details-container" key={item.id}>
-          <div className="img-container">
-            <img src={item.photo} alt={item.name} />
-          </div>
-          <div className="contents p-5">
-            <div className="p-3">
-              <p>Name: </p>
-              <h3>{item.name}</h3>
-            </div>
-
-            <div className="p-3 my-2">
-              <p>Price: $</p>
-              {' '}
-              <h4>{item.ticket_price}</h4>
-            </div>
-          </div>
-        </div>
-      ))}
+    <div className="item">
+      <h3 className="room-name text-center">
+        {roomDetails.name}
+        { eventID }
+      </h3>
     </div>
   );
 }

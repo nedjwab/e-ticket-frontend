@@ -1,41 +1,124 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+
+.text,
+.secondry-text {
+  margin-top: 20px;
   text-align: center;
+  margin-left: 10%;
+  font-family: 'Crimson Text', serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.secondry-text {
+  color: #b2b2b2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
+.sidebar {
+  background-color: #97bf11;
+  opacity: 0.8;
+  color: white;
 }
 
-.App-header {
-  min-height: 100vh;
+.sidebar__menu__item__text {
+  color: white;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+}
+
+.cards {
+  margin-top: 3%;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: white;
+  cursor: pointer;
+  width: 41%;
+  margin-left: 37%;
+  border: 1px solid #eaeaea;
+  margin-bottom: 20px;
+}
+
+.cards:hover {
+  box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+}
+
+.card-title {
+  font-family: 'Crimson Text', serif;
+  font-size: 30px;
+}
+
+.img-container {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.img-container img {
+  width: 60%;
+  height: 50%;
+  margin-bottom: 32px;
+}
+
+.link-decoration {
+  padding: 2%;
+  border-radius: 20px;
+  margin-top: 90px;
+  background-color: white;
+  border: 1px solid #97bf11;
+  color: black;
+}
+
+.link-decoration:hover {
+  background-color: #97bf11;
+  color: white;
+}
+
+.card-text {
+  color: #b2b2b2;
+  margin-bottom: 50px;
+  font-size: 17px;
+}
+
+.info-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'Crimson Text', serif;
+}
+
+.location-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  font-family: 'Crimson Text', serif;
+  font-weight: 500;
+  font-size: 20px;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+.icon {
+  margin-top: 7px;
+  color: #97bf11;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
+.green-text {
+  color: #97bf11;
+}
 
-  50% {
-    transform: translateY(10px);
-  }
+.detail-reserve {
+  margin-left: 87%;
+}
 
-  100% {
-    transform: translateY(0);
-  }
+.back-button {
+  margin-left: 20%;
+  font-size: 50px;
+  cursor: pointer;
 }

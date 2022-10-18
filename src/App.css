@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
 
-.text,.secondry-text {
+.text,
+.secondry-text {
   margin-top: 20px;
   text-align: center;
   margin-left: 10%;
@@ -8,23 +9,22 @@
 }
 
 .secondry-text {
-  color:#B2B2B2;
+  color: #b2b2b2;
 }
 
 .sidebar {
   background-color: #97bf11;
   opacity: 0.8;
-  color:white;
+  color: white;
 }
 
 .sidebar__menu__item__text {
-  color:white;
+  color: white;
 }
-
 
 .card-container {
   display: grid;
-  grid-template-columns: 1fr ;
+  grid-template-columns: 1fr;
   width: 100%;
 }
 
@@ -33,10 +33,10 @@
   border-radius: 10px;
   padding: 30px;
   background-color: white;
-  cursor :pointer;
+  cursor: pointer;
   width: 41%;
   margin-left: 32%;
-  border:1px solid #EAEAEA;
+  border: 1px solid #eaeaea;
   margin-bottom: 20px;
 }
 
@@ -44,10 +44,9 @@
   box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
 }
 
-
 .link {
   color: black;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .card-title {
@@ -67,20 +66,20 @@
 }
 
 .link-decoration {
-  padding:2%;
+  padding: 2%;
   border-radius: 20px;
-  margin-top:90px;
-  background-color:white;
+  margin-top: 90px;
+  background-color: white;
   border: 1px solid #97bf11;
-  color:black;
+  color: black;
 }
 
-.link-decoration:hover{
-  background-color:#97bf11;
-  color:white;
+.link-decoration:hover {
+  background-color: #97bf11;
+  color: white;
 }
 
 .card-text {
-  color:#B2B2B2;
+  color: #b2b2b2;
   margin-bottom: 50px;
 }

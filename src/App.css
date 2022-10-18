@@ -282,18 +282,29 @@
   }
 }
 
-@media (min-width: 601px)  and (max-width: 920px) {
+@media (min-width: 601px) and (max-width: 920px) {
   .home-top-content h1 {
     font-size: 25px;
     width: 60%;
   }
 
+  .h-full {
+    height: 100vh !important;
+  }
+
   .grd {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
     width: 80%;
     height: 70%;
     margin: auto;
+  }
+
+  .form-container {
+    padding-top: 92px;
+    margin-top: auto;
   }
 
   .side {
@@ -344,13 +355,5 @@
 
   .App {
     display: block;
-    
-  50% {
-    transform: translateY(10px);
-  }
-
-  100% {
-    transform: translateY(0);
-
   }
 }

@@ -36,20 +36,19 @@ const Login = () => {
   };
 
   return (
-    <section className="form-section bg-lime-500 ">
-      <div className="overlay">
+    <section className="form-section">
+      <div>
         <div className="form-signin">
-          <div className="form-intro text-white text-center  p-1 my-2 ">
+          <div className="form-header">
             <h2>Login</h2>
-            <hr className="px-2" />
           </div>
 
           <form onSubmit={handleUserLogin}>
             <div className="input-floor">
-              <label htmlFor="name-input" className="w-100 my-2">
+              <label htmlFor="name-input">
                 <input
                   id="name-input"
-                  className="form-control py-2  px-4 "
+                  className="form-control"
                   type="text"
                   value={user.username}
                   onChange={(e) => setUser({ ...user, username: e.target.value })}
@@ -59,10 +58,10 @@ const Login = () => {
             </div>
 
             <div className="input-floor">
-              <label htmlFor="password-input" className="w-100 my-2">
+              <label htmlFor="password-input">
                 <input
                   id="password-input"
-                  className="form-control py-2  px-4 "
+                  className="form-control"
                   type="password"
                   value={user.password_digest}
                   onChange={(e) => setUser({ ...user, password_digest: e.target.value })}
@@ -71,11 +70,11 @@ const Login = () => {
               </label>
             </div>
 
-            <div className="button-container w-50">
-              <button type="submit" className="btn sign-up">
+            <div className="button-container">
+              <button type="submit">
                 Login
               </button>
-              <Link to="/signup" className="btn log-in my-2">
+              <Link to="/signup">
                 SignUp
               </Link>
             </div>

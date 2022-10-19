@@ -7,6 +7,7 @@ import AddReservation from './components/reservation/AddReservation';
 import EventDetails from './components/events/EventDetails';
 import SignUp from './components/users/SignUp';
 import Login from './components/users/Login';
+import SplashScreen from './components/session/SplashScreen';
 import './App.css';
 
 function App() {
@@ -14,8 +15,9 @@ function App() {
     <div className="App">
       {(sessionStorage.getItem('loginToken')) ? <Navbar /> : null }
       <Routes>
+        <Route exact path="/" element={<SplashScreen />} />
         <Route path="/home" element={<Event />} />
-        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/Addreservation" element={<AddReservation />} />
         <Route path="/Myreservations" element={<MyReservations />} />
         <Route path="/events/:eventID" element={<EventDetails />} />

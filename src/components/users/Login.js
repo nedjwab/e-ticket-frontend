@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { fetchCurrentUser } from '../../features/users/registerSlice';
 
 const Login = () => {
+  const notify = () => toast('User login in Succefuly!');
   const dispach = useDispatch();
   const navigate = useNavigate();
 
@@ -71,9 +74,10 @@ const Login = () => {
             </div>
 
             <div className="button-container">
-              <button type="submit">
+              <button type="submit" onClick={notify}>
                 Login
               </button>
+              <ToastContainer />
               <Link to="/signup">
                 SignUp
               </Link>

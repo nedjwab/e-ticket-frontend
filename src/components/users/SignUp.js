@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { fetchNewUser } from '../../features/users/registerSlice';
 
@@ -15,11 +17,6 @@ function SignUp() {
   const handleRegisterSubmit = (e) => {
     e.preventDefault(e);
 
-    if (!newuser.username || !newuser.password_digest || !newuser.email) {
-      alert('Fill up the form!');
-      return;
-    }
-
     const user = {
       user: { ...newuser },
     };
@@ -32,6 +29,14 @@ function SignUp() {
       password_digest: '',
     });
     navigate('/');
+  };
+
+  const notify = () => {
+    if (!newuser.username || !newuser.password_digest || !newuser.email) {
+      toast('Fill the form please!');
+    } else {
+      toast('User Signed up succefuly!');
+    }
   };
 
   return (
@@ -82,13 +87,13 @@ function SignUp() {
             </div>
             <div className="button-container">
 
-              <button type="submit">
+              <button type="submit" onClick={notify}>
                 SignUp
               </button>
+              <ToastContainer />
               <Link to="/">
                 Login
               </Link>
-
             </div>
           </form>
         </div>

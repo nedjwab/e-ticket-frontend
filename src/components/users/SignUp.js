@@ -43,8 +43,8 @@ function SignUp() {
     <section className="form-container">
       <div>
         <div className="form-signin">
-          <div className="green-text">
-            <h1 className="green-text">REGISTER</h1>
+          <div className="form-header">
+            <h1 className="green-text">Register</h1>
           </div>
           <form
             onSubmit={handleRegisterSubmit}

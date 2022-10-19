@@ -248,7 +248,7 @@
 }
 
 .form-container {
-  margin-top: 3%;
+  margin-top: 8%;
   border-radius: 10px;
   padding: 30px;
   background-color: white;
@@ -260,6 +260,11 @@
 }
 
 .form-header {
+  margin-left: 40%;
+  font-size: 24px;
+}
+
+.login-header {
   margin-left: 60%;
   font-size: 24px;
 }

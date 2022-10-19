@@ -46,7 +46,7 @@ const Login = () => {
     <section className="form-container">
       <div>
         <div className="form-signin">
-          <div className="form-header">
+          <div className="login-header">
             <h2 className="green-text">Login</h2>
           </div>
 

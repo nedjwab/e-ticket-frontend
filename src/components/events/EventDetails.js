@@ -5,16 +5,16 @@ import { Audio } from 'react-loader-spinner';
 
 export default function Event() {
   const { eventID } = useParams();
-  const [roomDetails, setRoomDetails] = useState('');
+  const [eventDetails, setEventDetails] = useState('');
   const [loading, setLoading] = useState(true);
   useEffect(() => {
-    const roomData = {
+    const eventData = {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' },
     };
-    fetch(`http://127.0.0.1:3001/api/v1/events/${eventID}`, roomData)
+    fetch(`http://127.0.0.1:3001/api/v1/events/${eventID}`, eventData)
       .then((response) => response.json())
-      .then((data) => setRoomDetails(data))
+      .then((data) => setEventDetails(data))
       .catch((err) => {
         console.log(err);
       })
@@ -42,32 +42,32 @@ export default function Event() {
   return (
     <div className="w-100">
       <div className="card-container">
-        <div key={roomDetails.id} className="cards">
+        <div key={eventDetails.id} className="cards">
           <div className="img-container">
-            <img src={roomDetails.photo} alt={roomDetails.name} />
+            <img src={eventDetails.photo} alt={eventDetails.name} />
           </div>
-          <p className="link card-title">{roomDetails.name}</p>
+          <p className="link card-title">{eventDetails.name}</p>
           <div className="card-body">
             <p className="card-text">
               {' '}
-              {roomDetails.description}
+              {eventDetails.description}
             </p>
             <div className="info-container">
               <p>Ticket Price :</p>
               <p className="green-text">
-                {roomDetails.ticket_price}
+                {eventDetails.ticket_price}
                 $
               </p>
             </div>
             <div className="info-container">
               <p>Seats Available :</p>
-              <p className="green-text">{roomDetails.seats_available}</p>
+              <p className="green-text">{eventDetails.seats_available}</p>
             </div>
             <div className="location-container">
               <div className="icon">
                 <HiLocationMarker />
               </div>
-              <p>{roomDetails.location}</p>
+              <p>{eventDetails.location}</p>
             </div>
             <Link to="/Addreservation" className="link link-decoration detail-reserve">Reserve</Link>
           </div>

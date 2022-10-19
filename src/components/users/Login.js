@@ -6,7 +6,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import { fetchCurrentUser } from '../../features/users/registerSlice';
 
 const Login = () => {
-  const notify = () => toast('User login in Succefuly!');
   const dispach = useDispatch();
   const navigate = useNavigate();
 
@@ -28,14 +27,19 @@ const Login = () => {
         navigate('/home');
         window.location.reload(false);
       }, 1000);
-    } else {
-      alert('Username or Password cannot be empty !!');
-      return;
     }
     setUser({
       username: '',
       password_digest: '',
     });
+  };
+
+  const notify = () => {
+    if (!user.username && !user.password_digest) {
+      toast('Fill the form please!');
+    } else {
+      toast('User Signed up succefuly!');
+    }
   };
 
   return (

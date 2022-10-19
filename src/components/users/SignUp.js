@@ -43,7 +43,7 @@ function SignUp() {
     <section className="form-container">
       <div>
         <div className="form-signin">
-          <div className="form-header">
+          <div className="green-text">
             <h1 className="green-text">REGISTER</h1>
           </div>
           <form

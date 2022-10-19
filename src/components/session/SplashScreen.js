@@ -6,12 +6,8 @@ const SplashScreen = () => (
     <section className="splash-sec">
       <div className="overlay" />
       <div className="top">
-        <div className="logo-div1">
-          logo
-        </div>
         <div className="welcome-text">
-          <h1 className="text">Welcome Back</h1>
-          <p className="text-two">Login to your Account</p>
+          <h1 className="white-text">Welcome Back</h1>
         </div>
         <NavLink to="/login" className="login-btn btn-login">
           <span>Login</span>

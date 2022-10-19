@@ -25,7 +25,8 @@
 .card-container {
   display: grid;
   grid-template-columns: 1fr;
-  width: 100%;
+  width: 80%;
+  margin-left: 19%;
 }
 
 .cards {
@@ -34,7 +35,8 @@
   padding: 30px;
   background-color: white;
   cursor: pointer;
-  width: 41%;
+  width: 80%;
+  height: 80%;
   margin-left: 37%;
   border: 1px solid #eaeaea;
   margin-bottom: 20px;

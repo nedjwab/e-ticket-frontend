@@ -48,7 +48,7 @@ export default function Event() {
             <Link to="/Addreservation" className="link link-decoration detail-reserve">Reserve</Link>
           </div>
         </div>
-        <Link to="/" className="link green-text back-button"><HiOutlineArrowSmLeft /></Link>
+        <Link to="/home" className="link green-text back-button"><HiOutlineArrowSmLeft /></Link>
       </div>
     </div>
   );

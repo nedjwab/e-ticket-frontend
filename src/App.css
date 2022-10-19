@@ -30,6 +30,26 @@
   margin-left: 19.8%;
 }
 
+.details-cards {
+  margin-top: 3%;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: white;
+  cursor: pointer;
+  width: 50%;
+  height: 89%;
+  margin-left: 22%;
+  border: 1px solid #eaeaea;
+  margin-bottom: 20px;
+}
+
+.details-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 80%;
+  margin-left: 20%
+}
+
 .cards {
   margin-top: 3%;
   border-radius: 10px;
@@ -129,7 +149,7 @@
 }
 
 .back-button {
-  margin-left: 20%;
+  margin-left: 4%;
   font-size: 50px;
   cursor: pointer;
 }

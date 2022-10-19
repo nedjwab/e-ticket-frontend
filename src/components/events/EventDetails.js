@@ -41,8 +41,8 @@ export default function Event() {
 
   return (
     <div className="w-100">
-      <div className="card-container">
-        <div key={eventDetails.id} className="cards">
+      <div className="details-container">
+        <div key={eventDetails.id} className="details-cards">
           <div className="img-container">
             <img src={eventDetails.photo} alt={eventDetails.name} />
           </div>

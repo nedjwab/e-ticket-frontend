@@ -21,18 +21,14 @@ const Navbar = () => {
       path: '/Addevent',
       text: 'Add event',
     },
+
     {
       id: 4,
-      path: '/Deleteevent',
-      text: 'Delete Event',
-    },
-    {
-      id: 5,
       path: '/Addreservation',
       text: 'Reserve',
     },
     {
-      id: 6,
+      id: 5,
       path: '/',
       text: 'sign out',
     },

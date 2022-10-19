@@ -144,13 +144,6 @@
   margin-top: 20%;
 }
 
-.logo-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .splash-sec {
   display: flex;
   justify-content: space-between;
@@ -174,20 +167,6 @@
   background: #fff;
   opacity: 0.7;
   position: absolute;
-}
-
-.logo-div1 {
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
-  background: #eee;
-  margin: auto;
-}
-
-.logo1 {
-  width: 90px;
-  height: 90px;
-  margin: 25px 0 9px 30px;
 }
 
 .login-btn {
@@ -216,6 +195,31 @@
   margin-top: 10%;
 }
 
+.button-container {
+
+}
+
+.logo-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-div1 {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  background: #eee;
+  margin: auto;
+}
+
+.logo1 {
+  width: 90px;
+  height: 90px;
+  margin: 25px 0 9px 30px;
+}
+
 .top {
   margin-top: 10%;
   width: 100%;
@@ -228,11 +232,52 @@
 }
 
 .bottom {
-  z-index: 99;
-  margin-bottom: 20px;
+  z-index: 99; 
 }
 
-/* Registeration form */
+
+.submit-button {
+  color:white;
+  padding: 7%;
+  background-color: #91bf13;
+  border: none;
+  margin-bottom: 10%;
+  width: 50%;
+  margin-left: 60%;
+  margin-top:7%;
+}
+
+.links {
+  margin-left: 70%;
+}
+
+.form-container {
+  margin-top: 3%;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: white;
+  cursor: pointer;
+  width: 41%;
+  margin-left: 37%;
+  margin-bottom: 20px;
+  display:flex;
+}
+
+.form-header {
+  margin-left: 60%;
+  font-size: 24px;
+}
+
+.input-floor {
+  margin-bottom: 10%;
+}
+
+.form-control {
+  padding: 10%;
+  width: 150%;
+}
+
+
 .container-reg {
   margin: auto;
   display: flex;
@@ -294,6 +339,10 @@
     width: 80%;
     height: 70%;
     margin: auto;
+  }
+
+  .sidebar  {
+    display:none;
   }
 
   .reg-form input {

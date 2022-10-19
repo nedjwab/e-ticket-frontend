@@ -39,11 +39,11 @@ const Login = () => {
   };
 
   return (
-    <section className="form-section">
+    <section className="form-container">
       <div>
         <div className="form-signin">
           <div className="form-header">
-            <h2>Login</h2>
+            <h2 className="green-text">Login</h2>
           </div>
 
           <form onSubmit={handleUserLogin}>
@@ -55,7 +55,7 @@ const Login = () => {
                   type="text"
                   value={user.username}
                   onChange={(e) => setUser({ ...user, username: e.target.value })}
-                  placeholder="UserName"
+                  placeholder="Username"
                 />
               </label>
             </div>
@@ -74,11 +74,11 @@ const Login = () => {
             </div>
 
             <div className="button-container">
-              <button type="submit" onClick={notify}>
+              <button type="submit" onClick={notify} className="submit-button">
                 Login
               </button>
               <ToastContainer />
-              <Link to="/signup">
+              <Link to="/signup" className="links">
                 SignUp
               </Link>
             </div>

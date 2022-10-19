@@ -67,7 +67,7 @@ const AddEvent = () => {
           onSubmit={submitEvent}
         >
           <label htmlFor="name">
-            Event Name:
+            <p>Event Name:</p>
             {' '}
             <br />
             <input
@@ -83,7 +83,7 @@ const AddEvent = () => {
           </label>
 
           <label htmlFor="date">
-            Event Date :
+            <p>Event Date :</p>
             {' '}
             <br />
             <input
@@ -97,7 +97,7 @@ const AddEvent = () => {
           </label>
 
           <label htmlFor="image">
-            Event Image:
+            <p>Event Image:</p>
             {' '}
             <br />
             <input
@@ -112,7 +112,7 @@ const AddEvent = () => {
           </label>
 
           <label htmlFor="location">
-            Event Location:
+            <p>Event Location:</p>
             {' '}
             <br />
             <input
@@ -127,7 +127,7 @@ const AddEvent = () => {
           </label>
 
           <label htmlFor="description">
-            Event Description:
+            <p>Event Description:</p>
             {' '}
             <br />
             <input
@@ -143,7 +143,7 @@ const AddEvent = () => {
           </label>
 
           <label htmlFor="ticket">
-            ticket price :
+            <p>Ticket price :</p>
             {' '}
             <br />
             <input
@@ -157,7 +157,7 @@ const AddEvent = () => {
             />
           </label>
           <label htmlFor="seats">
-            Seats availaible : :
+            <p>Seats availaible :</p>
             {' '}
             <br />
             <input

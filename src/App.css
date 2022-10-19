@@ -275,6 +275,12 @@
   margin-left: 30%;
 }
 
+.add-form label p {
+  margin-bottom: 1%;
+  font-family: 'Crimson Text', serif;
+  font-size: 1.2rem;
+}
+
 .add-input {
   width :90%;
   padding: 3%;

@@ -55,125 +55,128 @@ const AddEvent = () => {
   };
 
   return (
-    <div className="form-container">
-      <h2 className="">Add Event</h2>
-      <hr className="" />
-      <form
-        id=""
-        className=""
-        onSubmit={submitEvent}
-      >
-        <label htmlFor="name" className="">
-          Event Name:
-          {' '}
-          <br />
-          <input
-            id="name"
-            className=""
-            type="text"
-            placeholder="Dancing event"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            maxLength="50"
-            required
-          />
-        </label>
+    <section className="add-container">
+      <div>
+        <div className="form-signin">
+          <div className="form-header">
+            <h1 className="green-text">Add New Event !</h1>
+          </div>
+        </div>
+        <form
+          className="add-form"
+          onSubmit={submitEvent}
+        >
+          <label htmlFor="name">
+            Event Name:
+            {' '}
+            <br />
+            <input
+              id="name"
+              className="add-input"
+              type="text"
+              placeholder="Dancing event"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              maxLength="50"
+              required
+            />
+          </label>
 
-        <label htmlFor="size" className="">
-          Event Date :
-          {' '}
-          <br />
-          <input
-            id="size"
-            className=""
-            type="date"
-            placeholder="45"
-            value={event_date}
-            onChange={(e) => setDate(e.target.value)}
-            required
-          />
-        </label>
+          <label htmlFor="date">
+            Event Date :
+            {' '}
+            <br />
+            <input
+              className="add-input"
+              type="date"
+              placeholder="45"
+              value={event_date}
+              onChange={(e) => setDate(e.target.value)}
+              required
+            />
+          </label>
 
-        <label htmlFor="image" className="">
-          Event Image:
-          {' '}
-          <br />
-          <input
-            id="image"
-            className=""
-            type="text"
-            placeholder="https://Event"
-            value={photo}
-            onChange={(e) => setPhoto(e.target.value)}
-            required
-          />
-        </label>
+          <label htmlFor="image">
+            Event Image:
+            {' '}
+            <br />
+            <input
+              id="image"
+              className="add-input"
+              type="text"
+              placeholder="https://Event"
+              value={photo}
+              onChange={(e) => setPhoto(e.target.value)}
+              required
+            />
+          </label>
 
-        <label htmlFor="location" className="">
-          Event Location:
-          {' '}
-          <br />
-          <input
-            id="location"
-            className=""
-            type="text"
-            placeholder="Sea, city, dessert.."
-            value={location}
-            onChange={(e) => setLocation(e.target.value)}
-            required
-          />
-        </label>
+          <label htmlFor="location">
+            Event Location:
+            {' '}
+            <br />
+            <input
+              id="location"
+              className="add-input"
+              type="text"
+              placeholder="Sea, city, dessert.."
+              value={location}
+              onChange={(e) => setLocation(e.target.value)}
+              required
+            />
+          </label>
 
-        <label htmlFor="description" className="">
-          Event Description:
-          {' '}
-          <br />
-          <input
-            id="description"
-            className=""
-            type="text"
-            placeholder="Reading event is an algerian event that..."
-            value={description}
-            onChange={(e) => setDescription(e.target.value)}
-            minLength="10"
-            required
-          />
-        </label>
+          <label htmlFor="description">
+            Event Description:
+            {' '}
+            <br />
+            <input
+              id="description"
+              className="add-input"
+              type="text"
+              placeholder="Reading event is an algerian event that..."
+              value={description}
+              onChange={(e) => setDescription(e.target.value)}
+              minLength="10"
+              required
+            />
+          </label>
 
-        <label htmlFor="ticket" className="">
-          ticket price :
-          {' '}
-          <br />
-          <input
-            id="tickets"
-            className=""
-            type="number"
-            placeholder="20,30 ... "
-            value={ticket_price}
-            onChange={(e) => setTicket(e.target.value)}
-            required
-          />
-        </label>
-        <label htmlFor="seats" className="">
-          Seats availaible : :
-          {' '}
-          <br />
-          <input
-            id="seats"
-            className=""
-            type="number"
-            placeholder="20,30 ... "
-            value={seats_available}
-            onChange={(e) => setseats(e.target.value)}
-            required
-          />
-        </label>
-        <button type="submit" className="fw-bold">
-          Submit
-        </button>
-        <ToastContainer />
-      </form>
-    </div>
+          <label htmlFor="ticket">
+            ticket price :
+            {' '}
+            <br />
+            <input
+              id="tickets"
+              className="add-input"
+              type="number"
+              placeholder="20,30 ... "
+              value={ticket_price}
+              onChange={(e) => setTicket(e.target.value)}
+              required
+            />
+          </label>
+          <label htmlFor="seats">
+            Seats availaible : :
+            {' '}
+            <br />
+            <input
+              id="seats"
+              className="add-input"
+              type="number"
+              placeholder="20,30 ... "
+              value={seats_available}
+              onChange={(e) => setseats(e.target.value)}
+              required
+            />
+          </label>
+          <button type="submit" className="submit-button form-button">
+            Submit
+          </button>
+          <ToastContainer />
+        </form>
+      </div>
+    </section>
   );
 };
 

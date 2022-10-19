@@ -8,6 +8,7 @@ import EventDetails from './components/events/EventDetails';
 import SignUp from './components/users/SignUp';
 import Login from './components/users/Login';
 import SplashScreen from './components/session/SplashScreen';
+import AddEvent from './components/events/EventForm';
 import './App.css';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/Addreservation" element={<AddReservation />} />
         <Route path="/Myreservations" element={<MyReservations />} />
         <Route path="/events/:eventID" element={<EventDetails />} />
+        <Route path="/Addevent" element={<AddEvent />} />
         <Route path="/signUp" element={<SignUp />} />
       </Routes>
     </div>

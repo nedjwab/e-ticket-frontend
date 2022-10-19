@@ -21,7 +21,6 @@ const Navbar = () => {
       path: '/Addevent',
       text: 'Add event',
     },
-
     {
       id: 4,
       path: '/Addreservation',

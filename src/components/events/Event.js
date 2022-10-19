@@ -7,6 +7,7 @@ import { fetchEvents, selectEvents } from '../../features/events/eventSlice';
 export default function Event() {
   const dispatch = useDispatch();
   const events = useSelector(selectEvents);
+  console.log(events);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

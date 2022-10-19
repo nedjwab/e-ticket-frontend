@@ -38,7 +38,7 @@ const Login = () => {
     if (!user.username && !user.password_digest) {
       toast('Fill the form please!');
     } else {
-      toast('User Signed up succefuly!');
+      toast('User Logged in succefuly!');
     }
   };
 

@@ -12,7 +12,7 @@ export default function Event() {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' },
     };
-    fetch(`http://127.0.0.1:3001/api/v1/events/${eventID}`, eventData)
+    fetch(`http://127.0.0.1:3000/api/v1/events/${eventID}`, eventData)
       .then((response) => response.json())
       .then((data) => setEventDetails(data))
       .catch((err) => {

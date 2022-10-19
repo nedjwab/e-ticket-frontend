@@ -31,6 +31,11 @@ const Navbar = () => {
       path: '/Addreservation',
       text: 'Reserve',
     },
+    {
+      id: 6,
+      path: '/',
+      text: 'sign out',
+    },
   ];
 
   return (

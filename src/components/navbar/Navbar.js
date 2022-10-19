@@ -1,6 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { FaTicketAlt } from 'react-icons/fa';
+import {
+  FaPlus, FaLinkedin, FaTwitter, FaInstagram,
+} from 'react-icons/fa';
 import './sidebar.css';
 
 const Navbar = () => {
@@ -13,8 +15,7 @@ const Navbar = () => {
     {
       id: 2,
       path: '/Myreservations',
-      text: 'My Reservations',
-      icon: { FaTicketAlt },
+      text: 'Reservations',
     },
     {
       id: 3,
@@ -46,7 +47,7 @@ const Navbar = () => {
                 <NavLink exact="true" to={link.path} className="pageLink">
                   <div className="sidebar__menu__item">
                     <div className="sidebar__menu__item__icon">
-                      { FaTicketAlt }
+                      <FaPlus />
                     </div>
                     <div className="sidebar__menu__item__text">
                       {link.text}
@@ -56,6 +57,12 @@ const Navbar = () => {
               </div>
             ))
         }
+
+        <div className="sidebar-footer">
+          <FaLinkedin />
+          <FaTwitter />
+          <FaInstagram />
+        </div>
       </div>
     </div>
   );

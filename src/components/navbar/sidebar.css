@@ -10,6 +10,15 @@
   border-right: 1px solid #ededed;
 }
 
+.sidebar-footer {
+  color :white;
+  margin-top: 70%;
+  font-size: 25px;
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+}
+
 .sidebar__logo {
   display: grid;
   place-items: center;
@@ -28,13 +37,15 @@
   align-items: center;
   place-content: flex-start;
   padding: 1rem 3rem;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   font-weight: 500;
   color: black;
 }
 
 .sidebar__menu__item__icon {
-  margin-right: 1rem;
+  color:white;
+  margin-right: 9%;
+  margin-top: 3%;
 }
 
 .pageLink {

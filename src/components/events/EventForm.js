@@ -56,7 +56,7 @@ const AddEvent = () => {
 
   return (
     <div className="form-container">
-      <h2 className="">Add Room</h2>
+      <h2 className="">Add Event</h2>
       <hr className="" />
       <form
         id=""

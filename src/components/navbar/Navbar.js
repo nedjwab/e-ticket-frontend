@@ -7,7 +7,7 @@ const Navbar = () => {
   const links = [
     {
       id: 1,
-      path: '/',
+      path: '/home',
       text: 'Events',
     },
     {
@@ -21,15 +21,16 @@ const Navbar = () => {
       path: '/Addevent',
       text: 'Add event',
     },
+
     {
       id: 4,
-      path: '/Deleteevent',
-      text: 'Delete Event',
+      path: '/Addreservation',
+      text: 'Reserve',
     },
     {
       id: 5,
-      path: '/Addreservation',
-      text: 'Reserve',
+      path: '/',
+      text: 'sign out',
     },
   ];
 

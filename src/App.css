@@ -123,17 +123,6 @@
   cursor: pointer;
 }
 
-.grd {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-column: repeat(4, 1fr);
-  grid-template-columns: repeat(4, 1fr);
-  grid-column: repeat(4, 1fr);
-  width: 100%;
-  height: 70%;
-  margin: auto;
-}
-
 .desk {
   display: flex;
 }
@@ -174,14 +163,14 @@
 }
 
 .welcome-text {
-  margin-top:6%;
+  margin-top: 6%;
 }
 
 .white-text {
   color: #91bf13;
   font-size: 50px;
   text-align: center;
-  font-family:'Fuzzy Bubbles', cursive; ;
+  font-family: 'Fuzzy Bubbles', cursive;
 }
 
 .btn-login {
@@ -228,25 +217,25 @@
 }
 
 .bottom {
-  z-index: 99; 
+  z-index: 99;
 }
 
-
 .submit-button {
-  color:white;
+  color: white;
   padding: 7%;
   background-color: #91bf13;
   border: none;
   margin-bottom: 10%;
   width: 50%;
   margin-left: 60%;
-  margin-top:7%;
+  margin-top: 7%;
 }
 
-.submit-button:hover,.btn-login:hover {
-  color:#91bf13;
+.submit-button:hover,
+.btn-login:hover {
+  color: #91bf13;
   background-color: #fff;
-  border:1px solid #91bf13;
+  border: 1px solid #91bf13;
 }
 
 .links {
@@ -262,7 +251,7 @@
   width: 41%;
   margin-left: 37%;
   margin-bottom: 20px;
-  display:flex;
+  display: flex;
 }
 
 .form-header {
@@ -283,7 +272,6 @@
   padding: 10%;
   width: 150%;
 }
-
 
 .container-reg {
   margin: auto;
@@ -333,9 +321,9 @@
   60% {
     background-image: url(./assests/images/event1.jpg);
   }
-  
+
   100% {
-    background-image: url(./assests/images/BusinessEvent.jpg)
+    background-image: url(./assests/images/BusinessEvent.jpg);
   }
 }
 
@@ -348,8 +336,8 @@
     margin: auto;
   }
 
-  .sidebar  {
-    display:none;
+  .sidebar {
+    display: none;
   }
 
   .reg-form input {

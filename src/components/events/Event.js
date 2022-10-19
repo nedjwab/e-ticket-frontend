@@ -15,6 +15,7 @@ export default function Event() {
       dispatch(setLoading());
     }, 1000);
   }, []);
+
   if (loading) {
     return (
       <div className="loader">

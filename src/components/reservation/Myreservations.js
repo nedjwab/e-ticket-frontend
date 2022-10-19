@@ -1,28 +1,7 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { fetchReservations, selectReservations } from '../../features/reservations/reservationSlice';
+import React from 'react';
 
-export default function MyReservations() {
-  const dispatch = useDispatch();
-  const reservations = useSelector(selectReservations);
-  useEffect(() => {
-    dispatch(fetchReservations());
-  }, []);
+const MyReservation = () => (
+  <h1 className="green-text text">Under Construction !</h1>
+);
 
-  if (reservations.length === 0) {
-    return (
-      <p>No reservation add one !</p>
-    );
-  }
-  return (
-    <ul className="list-group p-3">
-      <p>Reservations list</p>
-      {reservations.map((game) => (
-        <li key={game.id} className="list-group-item w-25 ">
-          <strong className="text-primary">{game.id}</strong>
-          <h2 className="text-info">{game.reservation_date}</h2>
-        </li>
-      ))}
-    </ul>
-  );
-}
+export default MyReservation;

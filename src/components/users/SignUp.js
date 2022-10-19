@@ -40,16 +40,16 @@ function SignUp() {
   };
 
   return (
-    <section className="form-section">
+    <section className="form-container">
       <div>
         <div className="form-signin">
           <div className="form-header">
-            <h1>REGISTER</h1>
+            <h1 className="green-text">REGISTER</h1>
           </div>
           <form
             onSubmit={handleRegisterSubmit}
           >
-            <div className="">
+            <div className="input-floor">
               <label htmlFor="username-input">
                 <input
                   className="form-control"
@@ -61,7 +61,7 @@ function SignUp() {
                 />
               </label>
             </div>
-            <div className="">
+            <div className="input-floor">
               <label htmlFor="email-input">
                 <input
                   id="email-input"
@@ -87,11 +87,11 @@ function SignUp() {
             </div>
             <div className="button-container">
 
-              <button type="submit" onClick={notify}>
+              <button type="submit" onClick={notify} className="submit-button">
                 SignUp
               </button>
               <ToastContainer />
-              <Link to="/">
+              <Link to="/" className="links">
                 Login
               </Link>
             </div>

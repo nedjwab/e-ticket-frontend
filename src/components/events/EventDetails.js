@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { HiLocationMarker, HiOutlineArrowSmLeft } from 'react-icons/hi';
+import { Audio } from 'react-loader-spinner';
 
 export default function Event() {
   const { eventID } = useParams();
   const [roomDetails, setRoomDetails] = useState('');
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     const roomData = {
       method: 'GET',
@@ -12,8 +14,30 @@ export default function Event() {
     };
     fetch(`http://127.0.0.1:3001/api/v1/events/${eventID}`, roomData)
       .then((response) => response.json())
-      .then((data) => setRoomDetails(data));
+      .then((data) => setRoomDetails(data))
+      .catch((err) => {
+        console.log(err);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   }, []);
+
+  if (loading) {
+    return (
+      <div className="loader">
+        <Audio
+          height="80"
+          width="80"
+          radius="9"
+          color="#97bf11"
+          ariaLabel="loading"
+          wrapperStyle
+          wrapperClass
+        />
+      </div>
+    );
+  }
 
   return (
     <div className="w-100">

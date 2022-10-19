@@ -15,7 +15,7 @@
   margin-top: 70%;
   font-size: 25px;
   display:flex;
-  justify-content:space-around;
+  justify-content:center;
   align-items: center;
 }
 
@@ -23,9 +23,14 @@
   display: grid;
   place-items: center;
   height: 120px;
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: 700;
   font-family: 'Dancing Script', cursive;
+}
+
+.footer-element {
+  margin-right: 9%;
+
 }
 
 .sidebar__menu {

@@ -59,9 +59,15 @@ const Navbar = () => {
         }
 
         <div className="sidebar-footer">
-          <FaLinkedin />
-          <FaTwitter />
-          <FaInstagram />
+          <div className="footer-element">
+            <FaLinkedin />
+          </div>
+          <div className="footer-element">
+            <FaTwitter />
+          </div>
+          <div className="footer-element">
+            <FaInstagram />
+          </div>
         </div>
       </div>
     </div>

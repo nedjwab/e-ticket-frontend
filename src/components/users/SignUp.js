@@ -28,7 +28,6 @@ function SignUp() {
       email: '',
       password_digest: '',
     });
-    navigate('/');
   };
 
   const notify = () => {
@@ -36,6 +35,7 @@ function SignUp() {
       toast('Fill the form please!');
     } else {
       toast('User Signed up succefuly!');
+      navigate('/');
     }
   };
 

@@ -243,6 +243,12 @@
   margin-top:7%;
 }
 
+.submit-button:hover,.btn-login:hover {
+  color:#91bf13;
+  background-color: #fff;
+  border:1px solid #91bf13;
+}
+
 .links {
   margin-left: 70%;
 }

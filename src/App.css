@@ -2,10 +2,11 @@
 
 .text,
 .secondry-text {
-  margin-top: 20px;
+  margin-top: 5%;
   text-align: center;
-  margin-left: 10%;
+  margin-left: 16%;
   font-family: 'Crimson Text', serif;
+  font-size: 2.8rem;
 }
 
 .secondry-text {
@@ -26,7 +27,7 @@
   display: grid;
   grid-template-columns: 1fr;
   width: 80%;
-  margin-left: 19%;
+  margin-left: 19.8%;
 }
 
 .cards {
@@ -54,6 +55,14 @@
 .card-title {
   font-family: 'Crimson Text', serif;
   font-size: 30px;
+}
+
+.dots {
+  margin-left: 19%;
+}
+
+.carousel {
+  margin-bottom: 4%;
 }
 
 .img-container {

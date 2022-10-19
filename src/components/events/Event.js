@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import PropTypes from 'prop-types';
+import { FaAngleRight, FaAngleLeft } from 'react-icons/fa';
 import { fetchEvents, selectEvents } from '../../features/events/eventSlice';
 
 export default function Event() {
@@ -45,7 +46,7 @@ export default function Event() {
       onClick={() => onClick()}
       style={{
         position: 'absolute',
-        top: '50%',
+        top: '77.7%',
         left: '0',
         transform: 'translateY(-50%)',
         zIndex: '1',
@@ -55,12 +56,13 @@ export default function Event() {
         width: '80px',
         height: '60px',
         fontSize: '20px',
+        cursor: 'pointer',
         color: '#fff',
         fontWeight: 'bold',
         boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)',
       }}
     >
-      left
+      <FaAngleLeft />
     </button>
   );
 
@@ -71,7 +73,7 @@ export default function Event() {
       onClick={() => onClick()}
       style={{
         position: 'absolute',
-        top: '50%',
+        top: '77%',
         right: '0',
         transform: 'translateY(-50%)',
         zIndex: '1',
@@ -81,12 +83,13 @@ export default function Event() {
         width: '80px',
         height: '60px',
         fontSize: '20px',
+        cursor: 'pointer',
         color: '#fff',
         fontWeight: 'bold',
         boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.2)',
       }}
     >
-      right
+      <FaAngleRight />
     </button>
   );
 
@@ -116,8 +119,7 @@ export default function Event() {
 
   return (
     <div className="w-100">
-      <h1 className="text">Our Events List</h1>
-      <h2 className="secondry-text ">Please select one</h2>
+      <h1 className="text green-text">Our Events List</h1>
       <div className="card-container">
         <Carousel
           responsive={responsive}
@@ -127,12 +129,12 @@ export default function Event() {
           keyBoardControl
           customTransition="all .5"
           transitionDuration={500}
-          containerClass="carousel-container"
+          containerClass="carousel-container carousel"
           deviceType={responsive.deviceType}
           partialVisible
           swipeable
           showDots
-          dotListClass="custom-dot-list-style carousel-dots"
+          dotListClass="custom-dot-list-style carousel-dots dots"
           renderDotsOutside
           itemClass="carousel-item-padding-10-px rounded-5 "
           slidesToSlide={1}

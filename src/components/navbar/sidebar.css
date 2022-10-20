@@ -11,11 +11,11 @@
 }
 
 .sidebar-footer {
-  color :white;
+  color: white;
   margin-top: 70%;
   font-size: 25px;
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -47,7 +47,7 @@
 }
 
 .sidebar__menu__item__icon {
-  color:white;
+  color: white;
   margin-right: 9%;
   margin-top: 3%;
 }

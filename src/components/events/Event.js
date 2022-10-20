@@ -10,7 +10,6 @@ import { fetchEvents, selectEvents } from '../../features/events/eventSlice';
 export default function Event() {
   const dispatch = useDispatch();
   const events = useSelector(selectEvents);
-  console.log(sessionStorage.getItem('loginToken'));
 
   useEffect(() => {
     dispatch(fetchEvents());

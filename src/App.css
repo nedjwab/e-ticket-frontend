@@ -407,6 +407,10 @@
     margin: auto;
   }
 
+  .form-container  {
+    margin-left: 6%  ;
+  }
+  
   .Navbar {
     overflow: hidden;
   }
@@ -426,6 +430,7 @@
   .form-container {
     padding-top: 92px;
     margin-top: auto;
+    margin-left: 30%;
   }
 
   .side {

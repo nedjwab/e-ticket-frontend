@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Audio } from 'react-loader-spinner';
 import { Link } from 'react-router-dom';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -11,14 +10,10 @@ import { fetchEvents, selectEvents } from '../../features/events/eventSlice';
 export default function Event() {
   const dispatch = useDispatch();
   const events = useSelector(selectEvents);
-  console.log(events);
-  const [loading, setLoading] = useState(true);
+  console.log(sessionStorage.getItem('loginToken'));
 
   useEffect(() => {
     dispatch(fetchEvents());
-    setTimeout(() => {
-      dispatch(setLoading());
-    }, 1000);
   }, []);
 
   const responsive = {
@@ -100,22 +95,6 @@ export default function Event() {
   CustomLeftArrow.propTypes = {
     onClick: PropTypes.func.isRequired,
   };
-
-  if (loading) {
-    return (
-      <div className="loader">
-        <Audio
-          height="80"
-          width="80"
-          radius="9"
-          color="#97bf11"
-          ariaLabel="loading"
-          wrapperStyle
-          wrapperClass
-        />
-      </div>
-    );
-  }
 
   return (
     <div className="w-100">

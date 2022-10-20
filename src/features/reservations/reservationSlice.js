@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const apiUrl = 'http://localhost:3000/api/v1/users/1/reservations';
+const apiUrl = 'https://radiant-island-08872.herokuapp.com/api/v1/users/1/reservations';
 
 export const fetchReservations = createAsyncThunk('reservation/fetchreservation',
   async () => {

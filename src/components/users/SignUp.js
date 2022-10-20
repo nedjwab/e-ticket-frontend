@@ -35,7 +35,9 @@ function SignUp() {
       toast('Fill the form please!');
     } else {
       toast('User Signed up succefuly!');
-      navigate('/');
+      setTimeout(() => {
+        navigate('/login');
+      }, 1000);
     }
   };
 

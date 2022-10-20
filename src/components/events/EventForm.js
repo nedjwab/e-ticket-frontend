@@ -42,7 +42,7 @@ const AddEvent = () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(event),
     };
-    fetch('http://127.0.0.1:3000/api/v1/events', operation)
+    fetch('https://radiant-island-08872.herokuapp.com/api/v1/events', operation)
       .then((response) => notify(response.status));
 
     setName('');

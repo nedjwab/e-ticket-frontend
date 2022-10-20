@@ -435,6 +435,16 @@
     margin-left: 40%;
     margin-top:60%
   }
+
+  .details-container {
+    margin-left: 0%;
+    margin-right: 90px;
+  }
+
+  .details-cards {
+    width:90%;
+    margin-left: 7%;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 920px) {

@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const apiUrl = 'https://radiant-island-08872.herokuapp.com/api/v1/events';
+const apiUrl = 'http://localhost:3001/api/v1/events';
 
 export const fetchEvents = createAsyncThunk('event/fetchevent',
   async () => {

@@ -7,7 +7,7 @@ const initialState = {
 };
 
 export const fetchNewUser = createAsyncThunk('register/fetchNewUser', (newUser) => {
-  const res = fetch('https://radiant-island-08872.herokuapp.com/api/v1/users', {
+  const res = fetch('http://localhost:3001/api/v1/users', {
     method: 'POST',
     headers: {
       'Content-type': 'application/json',
@@ -18,7 +18,7 @@ export const fetchNewUser = createAsyncThunk('register/fetchNewUser', (newUser) 
 });
 
 export const fetchCurrentUser = createAsyncThunk('login/fetchCurrentUser', (currentUser) => {
-  const res = fetch('https://radiant-island-08872.herokuapp.com/login', {
+  const res = fetch('http://localhost:3001/api/v1/login', {
     method: 'POST',
     headers: {
       'Content-type': 'application/json',

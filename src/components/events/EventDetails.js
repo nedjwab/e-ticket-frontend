@@ -12,7 +12,7 @@ export default function Event() {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' },
     };
-    fetch(`http://127.0.0.1:3000/api/v1/events/${eventID}`, eventData)
+    fetch(`https://radiant-island-08872.herokuapp.com/api/v1/events/${eventID}`, eventData)
       .then((response) => response.json())
       .then((data) => setEventDetails(data))
       .catch((err) => {
@@ -41,8 +41,8 @@ export default function Event() {
 
   return (
     <div className="w-100">
-      <div className="card-container">
-        <div key={eventDetails.id} className="cards">
+      <div className="details-container">
+        <div key={eventDetails.id} className="details-cards">
           <div className="img-container">
             <img src={eventDetails.photo} alt={eventDetails.name} />
           </div>

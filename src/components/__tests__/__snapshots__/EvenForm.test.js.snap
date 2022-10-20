@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Events renders correctly 1`] = `
+<section
+  className="add-container"
+>
+  <div>
+    <div
+      className="form-signin"
+    >
+      <div
+        className="form-header"
+      >
+        <h1
+          className="green-text add-text"
+        >
+          Add New Event !
+        </h1>
+      </div>
+    </div>
+    <form
+      className="add-form"
+      onSubmit={[Function]}
+    >
+      <label
+        htmlFor="name"
+      >
+        <p>
+          Event Name:
+        </p>
+         
+        <br />
+        <input
+          className="add-input"
+          id="name"
+          maxLength="50"
+          onChange={[Function]}
+          placeholder="Dancing event"
+          required={true}
+          type="text"
+          value=""
+        />
+      </label>
+      <label
+        htmlFor="date"
+      >
+        <p>
+          Event Date :
+        </p>
+         
+        <br />
+        <input
+          className="add-input"
+          onChange={[Function]}
+          placeholder="45"
+          required={true}
+          type="date"
+          value=""
+        />
+      </label>
+      <label
+        htmlFor="image"
+      >
+        <p>
+          Event Image:
+        </p>
+         
+        <br />
+        <input
+          className="add-input"
+          id="image"
+          onChange={[Function]}
+          placeholder="https://Event"
+          required={true}
+          type="text"
+          value=""
+        />
+      </label>
+      <label
+        htmlFor="location"
+      >
+        <p>
+          Event Location:
+        </p>
+         
+        <br />
+        <input
+          className="add-input"
+          id="location"
+          onChange={[Function]}
+          placeholder="Constantine, Algeria.:"
+          required={true}
+          type="text"
+          value=""
+        />
+      </label>
+      <label
+        htmlFor="description"
+      >
+        <p>
+          Event Description:
+        </p>
+         
+        <br />
+        <input
+          className="add-input"
+          id="description"
+          minLength="10"
+          onChange={[Function]}
+          placeholder="Reading event is an algerian event that..."
+          required={true}
+          type="text"
+          value=""
+        />
+      </label>
+      <label
+        htmlFor="ticket"
+      >
+        <p>
+          Ticket price :
+        </p>
+         
+        <br />
+        <input
+          className="add-input"
+          id="tickets"
+          onChange={[Function]}
+          placeholder="20,30 ... "
+          required={true}
+          type="number"
+          value=""
+        />
+      </label>
+      <label
+        htmlFor="seats"
+      >
+        <p>
+          Seats availaible :
+        </p>
+         
+        <br />
+        <input
+          className="add-input"
+          id="seats"
+          onChange={[Function]}
+          placeholder="20,30 ... "
+          required={true}
+          type="number"
+          value=""
+        />
+      </label>
+      <button
+        className="submit-button form-button"
+        type="submit"
+      >
+        Submit
+      </button>
+      <div
+        className="Toastify"
+      />
+    </form>
+  </div>
+</section>
+`;

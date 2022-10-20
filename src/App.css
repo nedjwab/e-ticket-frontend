@@ -429,7 +429,11 @@
     margin-top: 8%;
     margin-left: 7%;
     margin-bottom: 7%;
+  }
 
+  .loader {
+    margin-left: 40%;
+    margin-top:60%
   }
 }
 

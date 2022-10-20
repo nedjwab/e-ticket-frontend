@@ -32,7 +32,7 @@ describe('Event detail page', () => {
     expect(container).toMatchSnapshot();
   });
 
-  test('It renders the Room correctly', () => {
+  test('It renders the event correctly', () => {
     const tree = renderer
       .create(
         <Provider store={store}>

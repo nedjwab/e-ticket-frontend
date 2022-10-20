@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Events renders correctly 1`] = `
+<div
+  className="w-100"
+>
+  <h1
+    className="text green-text"
+  >
+    Our Events List
+  </h1>
+  <div
+    className="card-container"
+  >
+    <div
+      className="react-multi-carousel-list carousel-container carousel "
+      dir="ltr"
+    >
+      <ul
+        className="react-multi-carousel-track "
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseMove={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchMove={[Function]}
+        onTouchStart={[Function]}
+        style={
+          Object {
+            "overflow": "unset",
+            "transform": "translate3d(0px,0,0)",
+            "transition": "none",
+          }
+        }
+      />
+    </div>
+  </div>
+  <a
+    className="link card-title secondry-text mob-text"
+    href="/Addevent"
+    onClick={[Function]}
+  >
+     Add new one !
+  </a>
+</div>
+`;

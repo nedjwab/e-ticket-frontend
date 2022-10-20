@@ -6,6 +6,8 @@ This application is based on Event booking around the world, you need just to lo
 - React.js
 - Redux
 
+# Kanbanboard
+- [Kanban Board](https://github.com/users/nedjwab/projects/2)
 ## Link to the Back-End
 
 - [Back End Link](https://github.com/brahimdidi/E-ticket-Api)

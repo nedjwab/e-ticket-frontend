@@ -9,6 +9,10 @@
   font-size: 2.8rem;
 }
 
+.mob-text {
+  display: none;
+}
+
 .secondry-text {
   color: #b2b2b2;
 }
@@ -444,6 +448,12 @@
   .details-cards {
     width: 90%;
     margin-left: 7%;
+  }
+
+  .mob-text {
+    display: inline;
+    margin-left: 37%;
+    font-size: 20px;
   }
 }
 

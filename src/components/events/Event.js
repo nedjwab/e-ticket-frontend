@@ -138,6 +138,7 @@ export default function Event() {
           ))}
         </Carousel>
       </div>
+      <Link to="/Addevent" className="link card-title secondry-text mob-text"> Add new one !</Link>
     </div>
   );
 }

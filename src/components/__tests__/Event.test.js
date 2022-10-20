@@ -5,17 +5,17 @@ import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
 import EventDetails from '../events/EventDetails';
-import store from '../../app/store'
+import store from '../../app/store';
 
 describe('Event detail page', () => {
   render(
     <Provider store={store}>
       <Router>
-        <EventDetails/>
+        <EventDetails />
       </Router>
     </Provider>,
   );
-  
+
   test('Test the dom for non existing elements on the page', () => {
     const flower = screen.queryByText('flower');
     expect(flower).not.toBeInTheDocument();
@@ -25,7 +25,7 @@ describe('Event detail page', () => {
     const { container } = render(
       <Provider store={store}>
         <Router>
-          <EventDetails/>
+          <EventDetails />
         </Router>
       </Provider>,
     );

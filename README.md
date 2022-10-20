@@ -25,17 +25,17 @@ To get a local copy up and running follow these simple example steps.
 
 # Authors
 
-👤 **Nedjwab**
+👤 **Nedjwa Bouraiou**
 
-- GitHub: [@Abiodunraheem](https://github.com/Abiodunraheem)
-- Twitter: [@abiodunraheem23](https://twitter.com/abiodunraheem23)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/abiodun-raheem)
+- GitHub: [@Nedjwab](https://github.com/nedjwab)
+- Twitter: [@nedjwab](https://twitter.com/ned_jwa)
+- LinkedIn: [@Bouraiounedjwa](https://www.linkedin.com/feed/)abiodun-raheem)
 
 👤 **Ezeoke Stanley**
 
-- GitHub: [@stanleySimeon](https://github.com/stanleySimeon)
-- Twitter: [@mstanleyme](https://twitter.com/mstanleyme)
-- LinkedIn: [@stanleysimeon](https://www.linkedin.com/in/stanleysimeon/)
+- GitHub: [@stanley](https://github.com/stanleeeeee)
+- Twitter: [@mstanley](https://twitter.com/mstanmega89)
+- LinkedIn: [@stanley](https://www.linkedin.com/in/stanley-ezeoke/)
 
 ## :handshake: Contributing
 Contributions, issues, and feature requests are welcome!

@@ -8,6 +8,11 @@ This application is based on Event booking around the world, you need just to lo
 
 # Kanbanboard
 - [Kanban Board](https://github.com/users/nedjwab/projects/2)
+- Initial kanboard state :
+![](https://github.com/nedjwab/e-ticket-frontend/blob/dev/src/assests/images/front1.png)
+![](https://github.com/nedjwab/e-ticket-frontend/blob/dev/src/assests/images/front2.png)
+![](https://github.com/nedjwab/e-ticket-frontend/blob/dev/src/assests/images/front3.png)
+
 ## Link to the Back-End
 
 - [Back End Link](https://github.com/brahimdidi/E-ticket-Api)

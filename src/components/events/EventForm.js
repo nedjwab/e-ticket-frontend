@@ -59,7 +59,7 @@ const AddEvent = () => {
       <div>
         <div className="form-signin">
           <div className="form-header">
-            <h1 className="green-text">Add New Event !</h1>
+            <h1 className="green-text add-text">Add New Event !</h1>
           </div>
         </div>
         <form

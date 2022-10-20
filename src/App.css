@@ -457,7 +457,26 @@
   }
 
   .detail-reserve {
-    margin-left :82%
+    margin-left: 82%;
+  }
+
+  .add-form {
+    margin-left: 0%;
+  }
+
+  .add-container {
+    margin-left: 10%;
+    width: 80%;
+  }
+
+  .add-text {
+    text-align: center;
+    margin-left: 0%;
+    font-size: 23px;
+  }
+
+  .form-header {
+    margin-left: 3%;
   }
 }
 

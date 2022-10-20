@@ -119,7 +119,7 @@ const AddEvent = () => {
               id="location"
               className="add-input"
               type="text"
-              placeholder="Sea, city, dessert.."
+              placeholder="Constantine, Algeria..."
               value={location}
               onChange={(e) => setLocation(e.target.value)}
               required

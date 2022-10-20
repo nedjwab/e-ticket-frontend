@@ -1,5 +1,5 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-# Book en online event
+# Book an online event
 This application is based on Event booking around the world, you need just to login then book a reservation, you can also add am event and see all your Events booked
 
 # Built with

@@ -455,6 +455,10 @@
     margin-left: 37%;
     font-size: 20px;
   }
+
+  .detail-reserve {
+    margin-left :82%
+  }
 }
 
 @media (min-width: 601px) and (max-width: 920px) {

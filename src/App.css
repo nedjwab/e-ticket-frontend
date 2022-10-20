@@ -414,6 +414,23 @@
   .Navbar {
     overflow: hidden;
   }
+
+  .card-container {
+    margin-left:9%;
+  }
+
+  .dots {
+    margin-left: 7%;
+    margin-bottom:7%;
+  }
+
+  .w-100 h1 {
+    font-size: 30px;
+    margin-top: 8%;
+    margin-left: 7%;
+    margin-bottom: 7%;
+
+  }
 }
 
 @media (min-width: 601px) and (max-width: 920px) {

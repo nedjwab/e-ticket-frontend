@@ -13,6 +13,8 @@ This application is based on Event booking around the world, you need just to lo
 ![](https://github.com/nedjwab/e-ticket-frontend/blob/dev/src/assests/images/front2.png)
 ![](https://github.com/nedjwab/e-ticket-frontend/blob/dev/src/assests/images/front3.png)
 
+## Team memebers : 2
+
 ## Link to the Back-End
 
 - [Back End Link](https://github.com/brahimdidi/E-ticket-Api)

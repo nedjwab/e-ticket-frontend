@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 260px;
+  background-color: #fff;
+  border-right: 1px solid #ededed;
+}
+
+.sidebar-footer {
+  color: white;
+  margin-top: 70%;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar__logo {
+  display: grid;
+  place-items: center;
+  height: 120px;
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: 'Dancing Script', cursive;
+}
+
+.footer-element {
+  margin-right: 9%;
+}
+
+.sidebar__menu {
+  position: relative;
+}
+
+.sidebar__menu__item {
+  display: flex;
+  align-items: center;
+  place-content: flex-start;
+  padding: 1rem 3rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: black;
+}
+
+.sidebar__menu__item__icon {
+  color: white;
+  margin-right: 9%;
+  margin-top: 3%;
+}
+
+.pageLink {
+  text-decoration: none;
+}
+
+.sidebar__menu__indicator {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: calc(100% - 40px);
+  border-radius: 10px;
+  background-color: #308efe;
+  z-index: -1;
+  transform: translateX(-50%);
+  transition: 0.3s ease-in-out;
+}

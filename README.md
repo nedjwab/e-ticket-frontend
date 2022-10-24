@@ -1,75 +1,60 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
+# Book an online event
+This application is based on Event booking around the world, you need just to login then book a reservation, you can also add am event and see all your Events booked
 
-# Project Name
+# Built with
+- React.js
+- Redux
 
-> Description the project.
+# Kanbanboard
+- [Kanban Board](https://github.com/users/nedjwab/projects/2)
+- Initial kanboard state :
+![](https://github.com/nedjwab/e-ticket-frontend/blob/dev/src/assests/images/front1.png)
+![](https://github.com/nedjwab/e-ticket-frontend/blob/dev/src/assests/images/front2.png)
+![](https://github.com/nedjwab/e-ticket-frontend/blob/dev/src/assests/images/front3.png)
 
+## Team memebers : 2
 
-## Built With
+## Link to the Back-End
 
-- Major languages
-- Frameworks
-- Technologies used
+- [Back End Link](https://github.com/brahimdidi/E-ticket-Api)
 
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
-
-## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
+## installation
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+- clone the repository by running
+  ``` https://github.com/nedjwab/e-ticket-frontend.git ```
+- navigate to the folder
+  ``` cd <DIRECTORY> ```
+- Install packages
+  ``` npm i ```
+- Run the app
+  ``` npm start ```
 
-### Setup
+# Authors
 
-### Install
+👤 **Nedjwa Bouraiou**
 
-### Usage
+- GitHub: [@Nedjwab](https://github.com/nedjwab)
+- Twitter: [@nedjwab](https://twitter.com/ned_jwa)
+- LinkedIn: [@Bouraiounedjwa](https://www.linkedin.com/feed/)abiodun-raheem)
 
-### Run tests
+👤 **Ezeoke Stanley**
 
-### Deployment
+- GitHub: [@stanley](https://github.com/stanleeeeee)
+- Twitter: [@mstanley](https://twitter.com/mstanmega89)
+- LinkedIn: [@stanley](https://www.linkedin.com/in/stanley-ezeoke/)
 
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-## 🤝 Contributing
-
+## :handshake: Contributing
 Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
 ## Show your support
-
-Give a ⭐️ if you like this project!
-
+Give a :star:️ if you like this project!
 ## Acknowledgments
+Design inspired by [Murat Korkmaz](https://www.behance.net/muratk), design: [Vespa](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign)
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse offered guidance on how to make the project more professional
 
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
